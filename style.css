@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+body{
+    background-color: rgb(45,45,45);
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#wrapper{
+    background-color: rgb(20,20,20);
+    text-align: center;
+    font-size:1.25rem;
+    padding:2rem;
+}
+
+#about{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:2rem 0 2rem 0;
+}
+
+#about h2{
+    width:50rem;
+}
+
+#about img{
+    width:3rem;
+    background-color:rgb(45,45,45);
+    border-radius: 3rem;
+    padding:1rem;
+}
+
+#projects{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: center;
+    align-items:baseline;
+}
+
+.project p{
+    width: 60rem;
+}
+
+.project a{
+    color:white;
+}
+
+.project img{
+    width:60rem;
+    border-style: solid;
+    border-color:rgb(45,45,45);
+}
+
+.project-details ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+.react-tag, .node-tag, .mongoDB-tag, .express-tag, .html-tag, .css-tag, .js-tag, .java-tag, .sqlite-tag, .jwt-tag, .discordpy-tag, .python-tag{
+    padding: 1rem;
+}
+
+.react-tag{
+    background-color: rgb(97, 218, 251);
+}
+
+.node-tag{
+    background-color: rgb(104, 159, 99);
+}
+
+.mongoDB-tag{
+    background-color: rgb(0,237,100);
+}
+
+.express-tag{
+    background-color: rgb(110,110,110);
+}
+
+.html-tag{
+    background-color: rgb(241,101,41);
+}
+
+.css-tag{
+    background-color: rgb(41,101,241);
+}
+
+.js-tag{
+    background-color: rgb(255,218,62);
+}
+
+.java-tag{
+    background-color: rgb(248,152,29);
+}
+
+.sqlite-tag{
+    background-color: rgb(1,36,58);
+}
+
+.discordpy-tag{
+    background-color: rgb(88,101,242);
+}
+
+.python-tag{
+    background-color: rgb(74,138,189);
+}
+
+.jwt-tag{
+    background-color: rgb(245,206,133);
+}
+
+@media only screen and (max-width: 700px){
+#wrapper{
+    font-size:unset;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    padding:0;
+}
+
+.project-details ul{
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+#about img{
+    width:1.5rem;
+    padding: 1rem;
+}
+
+#about h2{
+    width:unset;
+}
+
+.project p{
+    width:unset;
+}
+.project img{
+    width:90%;
+}
+
+#projects{
+    align-items: center;
+}
+}
